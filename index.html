@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <!-- font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="page d-flex">
+        <!-- start sidbar  -->    
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0">Kilany</h3>
+            <ul>
+                <li>
+                    <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-solid fa-chart-column fa-fw"></i>       
+                        <span class="hide-mobile">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="hide-mobile">Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-solid fa-user-tie"></i>     
+                        <span class="hide-mobile">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-solid fa-diagram-project"></i>     
+                        <span class="hide-mobile">Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-solid fa-graduation-cap"></i>     
+                        <span class="hide-mobile">Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-solid fa-user-group"></i>     
+                        <span class="hide-mobile">Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-solid fa-file-pdf"></i>     
+                        <span class="hide-mobile">Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-regular fa-credit-card"></i>     
+                        <span class="hide-mobile">Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>  
+        <!-- end sidbar  -->    
+
+        <div class="content full-w over-hid">
+            <!-- start head  -->
+            <div class="head bg-white p-15 between-flex">
+                <div class="search p-relative">
+                    <input class=" search p-10 bor-ccc rad-10" type="text" placeholder="type a keyword" >
+                </div>
+
+                <div class="icons d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-solid fa-bell fa-lg"></i>
+                    </span>
+                    <img src="img/avatar.png" alt="">
+                </div>
+            </div>
+            <!-- end head  -->
+
+            <h1 class="p-relative">Dashboard</h1>
+            <div class="wrapper d-grid gap-20">
+
+                <!-- start welcome widget  -->
+                <div class="start bg-white rad-10 txt-c-mob block-mob">
+                    <div class="intro p-20 d-flex space-betwen bg-eee">
+                        <div>
+                            <h2 class="m-0">welcome</h2>
+                            <p class="c-gray mt-5">Kilany</p>
+                        </div>
+                        <img src="img/welcome.png" alt="" class="hide-mobile">
+                    </div>
+                    <img src="img/avatar.png" alt="" class="avatar">
+                    <div class="body txt-c d-flex p-20 mt-20 mb-20 block-mob">
+                        <div>
+                           Ahmed Kilany
+                            <span class="d-block c-gray fs-14 mt-10 ">Developer</span>
+                        </div>
+                        <div>
+                            80
+                            <span class="d-block c-gray fs-14 mt-10 ">Projects</span>
+                        </div>
+                        <div>
+                            $100
+                            <span class="d-block c-gray fs-14 mt-10 ">Earned</span>
+                        </div>
+                    </div>
+                    <a href="profile.html" class="visit d-block bg-blue c-white btn-shape w-fit">Profile</a>
+                </div>
+                
+                <!-- end welcome widget  -->
+
+                <!-- start quik draft  -->
+                <div class="quik-draft bg-white p-20 rad-6">
+                    <h2 class="mt-0 mb-20">Quick Draft</h2>
+                    <p class="mb-20 c-gray">Write A Draft For Your Ideas</p>
+                    <form action="">
+                        <input type="text" placeholder="Title" class="d-block bg-eee full-w p-10 mb-20 bor-none rad-6">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Thought" class="d-block bg-eee full-w p-10 mb-20 bor-none rad-6"></textarea>
+                        <input type="submit" value="save" class="submit d-block bg-blue c-white btn-shape w-fit" style="margin: 0 10px 10px auto;">  
+                    </form>
+                </div>
+                <!-- end quik draft  -->
+
+                <!-- start target widget  -->
+                <div class="targets bg-white p-20 rad-6">
+                    <h2>Yearly Targets</h2>
+                    <p class="mb-20 c-gray">Targets Of The Year</p>
+                    <div class="target-row d-flex mb-20">
+                        <div class="icon center-flex">
+                            <i class="fa-solid fa-dollar-sign fa-lg c-blue"></i>
+                        </div>
+                        <div class="details">
+                            <span class="d-block c-gray">Money</span>
+                            <span class="d-block fw-bold mt-5 mb-10">$20,000</span>
+                            <div class="progress p-relative">
+                                <span class="bg-blue " style="width:80%">
+                                    <span class="bg-blue c-white">80%</span>
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="target-row orang d-flex mb-20">
+                        <div class="icon center-flex orange">
+                            <i class="fa-solid fa-code fa-lg c-orange"></i>
+                        </div>
+                        <div class="details">
+                            <span class="d-block c-gray">Projects</span>
+                            <span class="d-block fw-bold mt-5 mb-10">12</span>
+                            <div class="progress prog-orange p-relative">
+                                <span class="orange bg-orange " style="width:40%">
+                                    <span class=" bg-orange c-white">40%</span>
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="target-row d-flex mb-20">
+                        <div class="icon green center-flex">
+                            <i class="fa-solid fa-people-group fa-lg c-green"></i>
+                        </div>
+                        <div class="details">
+                            <span class="d-block c-gray">Team</span>
+                            <span class="d-block fw-bold mt-5 mb-10">2</span>
+                            <div class="progress prog-green p-relative">
+                                <span class="bg-green green " style="width:65%">
+                                    <span class="bg-green c-white">65%</span>
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end target widget  -->
+
+                <!-- start ticket widget  -->
+                <div class="tickets bg-white p-20 rad-6">
+                    <h2>Tickets Statistics</h2>
+                    <p class="c-gray fs-14 mb-20">Everything About Support Tickets</p>
+                    <div class="d-flex f-wrap txt-c gap-20">
+                        <div class="box rad-10  p-20 fs-14">
+                            <i class="fa-regular fa-rectangle-list fa-2x mb-10 c-orange"></i>
+                            <span class="d-block fw-bold c-black mb-5 fs-25">2500</span>
+                           Total
+                        </div>
+                        <div class="box rad-10 p-20 fs-14">
+                            <i class="fa-solid fa-spinner fa-2x mb-10 c-blue"></i>
+                            <span class="d-block fw-bold c-black mb-5 fs-25">500</span>
+                            Pending
+                        </div>
+                        <div class="box rad-10 p-20 fs-14">
+                            <i class="fa-regular fa-circle-check fa-2x mb-10 c-green"></i>
+                            <span class="d-block fw-bold c-black mb-5 fs-25">1900</span>
+                            Closed
+                        </div>
+                        <div class="box rad-10 p-20 fs-14">
+                            <i class="fa-regular fa-rectangle-xmark fa-2x mb-10 c-red"></i>
+                            <span class="d-block fw-bold c-black mb-5 fs-25">100</span>
+                            Deleted
+                        </div>
+                    </div>
+                </div>
+                <!-- end ticket widget  -->
+
+                <!-- start latest news widget  -->
+                <div class="latest-news"></div>
+                <!-- end latest news widget  -->
+
+                <!-- start task widget  -->
+                <div class="tasks"></div>
+                <!-- end task widget  -->
+
+                <!-- start search widget  -->
+                <div class="search-items"></div>
+                <!-- end search widget  -->
+
+                <!-- start latest uploaded  -->
+                <div class="latest-uploaded"></div>
+                <!-- end latest uploaded  -->
+
+                <!-- start last project  -->
+                <div class="last-project"></div>
+                <!-- end last project  -->
+
+                <!-- start reminders -->
+                <div class="reminders"></div>
+                <!-- end reminders -->
+
+                <!-- start  latest post widget  -->
+                <div class="latest-post"></div>
+                <!-- end latest post widget  -->
+
+                <!-- start social media  -->
+                <div class="social-media"></div>
+                <!-- end social media  -->
+
+                <!-- start projects widget  -->
+                <div class="projects"></div>
+                <!-- end projects widget  -->
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
