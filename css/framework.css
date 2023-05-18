@@ -44,6 +44,9 @@
 .gap-20 {
     gap: 20px;
 }
+.in-block {
+    display: inline-block;
+}
 /* end display  */
 
 /* start position */
@@ -77,6 +80,9 @@
 .bg-eee {
     background-color: #eee;
 }
+.bg-ddd {
+    background-color: #ddd;
+}
 .bg-blue {
     background-color: var(--blue-color);
 }
@@ -89,7 +95,7 @@
 .bg-red {
     background-color: var(--red-color);
 }
-c-black {
+.c-black {
     color: black;
 }
 .c-gray {
@@ -145,6 +151,9 @@ c-black {
 .m-0 {
     margin: 0;
 }
+.m-20 {
+    margin:20px;
+}
 .mt-0 {
     margin-top: 0;
 }
@@ -169,8 +178,17 @@ c-black {
 .mb-10 {
     margin-bottom: 10px;
 }
+.mb-15 {
+    margin-bottom: 15px;
+}
 .mb-20 {
     margin-bottom: 20px;
+}
+.b-none {
+    border: none;
+}
+.b-ccc {
+    border:1px solid #ccc;
 }
 .rad-6 {
     border-radius: 6px;
@@ -211,6 +229,9 @@ c-black {
 }
 .fs-14 {
     font-size: 14px;
+}
+.fs-15 {
+    font-size: 15px;
 }
 .fs-16 {
     font-size: 16px;
@@ -255,6 +276,59 @@ c-black {
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
 }
+    /* start goggle  */
+    .toggle-checkbox {
+        appearance: none;
+        -webkit-appearance: none;
+    }
+    .toggle-switch {
+        position: relative;
+        background-color: #ccc;
+        width: 78px;
+        height: 32px;
+        cursor: pointer;
+        border-radius: 18px;
+        -webkit-border-radius: 18px;
+        -moz-border-radius: 18px;
+        -ms-border-radius: 18px;
+        -o-border-radius: 18px;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+    }
+    .toggle-switch::before {
+        position: absolute;
+        content: "off";
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        left: 4px;
+        top: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 800;
+        color: gray;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+    }
+    .toggle-checkbox:checked + .toggle-switch {
+        background-color: var(--blue-color);
+    }
+    .toggle-checkbox:checked + .toggle-switch::before {
+        content: "on";
+        left: 50px;
+        color: var(--blue-color);
+    }
+    /* end goggle  */
+
 /* end componets  */
 
 /* start overflow  */
