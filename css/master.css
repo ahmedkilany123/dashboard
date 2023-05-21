@@ -716,6 +716,7 @@ opacity: 0;
     padding: 2px;
     background-color: white;
 }
+
 .projects .responsive-table td img:not(:first-child) {
     margin-left: -20px;
 }
@@ -774,10 +775,10 @@ opacity: 0;
     cursor: no-drop;
 }
     /* start security */
-.security div:not(:last-of-type) {
+.social div:not(:last-of-type) {
     border-bottom: 1px solid #eee;
 }
-.security div input {
+.social div input {
     background-color: #f6f6f6;
     border: 1px solid #ccc;
     border-left: none;
@@ -785,7 +786,7 @@ opacity: 0;
     height: 40px;
     
 } 
-.security div i {
+.social div i {
     display: flex;
     align-items: center;
     background-color: #f6f6f6;
@@ -814,9 +815,7 @@ opacity: 0;
 
     /* end security */
 
-    /* start wedget control  */
 
-    /* end wedget control  */
 
     /* start security */
 .controls input[type="checkbox"] {
@@ -826,6 +825,7 @@ opacity: 0;
 .controls label {
     position: relative;
     padding-left: 30px;
+    cursor: pointer;
     transition: 0.3s;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
@@ -841,6 +841,9 @@ opacity: 0;
     left: 0;
     top: 50%;
     margin-top: -9px;
+}
+.controls label:hover::before {
+    border-color:var(--blue-color);
 }
 .controls label::after {
     font-family: "Font Awesome 6 Free";
@@ -871,12 +874,98 @@ opacity: 0;
     /* end security */
 
     /* start backup  */
-.backup .date {
-    
+
+.backup .date input[type="radio"]{
+    appearance: none;
+    -webkit-appearance: none;
+}
+.backup .date label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.backup .date label::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid var(--gray-color);
+    left: 0;
+    top: 50%;
+    margin-top: -11px;
+}
+.backup .date label::after{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+    left: 5px;
+    top: 5px;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.backup .date input:checked +  label::after {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.backup .date input#daily1:checked +  label::before {
+    border-color: var(--blue-color);
+}
+.backup .date input#daily2:checked +  label::before {
+    border-color: var(--blue-color);
+}
+.backup .date input#daily3:checked +  label::before {
+    border-color: var(--blue-color);
+}
+
+.servers {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+.servers label {
+    cursor: pointer;
+}
+.servers div {
+    border: 2px solid #eee;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.servers input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+.servers input[type="radio"]:checked + div{
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+}
+.servers i {
+    display: block;
 }
     /* end backup  */
 
 /* end settings */
+/* ======================================================================================= */
+
+
+
+
 
 /* animation  */
 @keyframes bell {
