@@ -968,6 +968,9 @@ opacity: 0;
     .profile-one {
         flex-direction: column;
     }
+    .profile-one .overview {
+        flex-direction: column;
+    }
 
 }
 .profile-one .left {
