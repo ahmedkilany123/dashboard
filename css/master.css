@@ -1189,6 +1189,7 @@ opacity: 0;
 }
 .courses .box .cover {
     width: 100%;
+    height: 200px;
 }
 .courses .box .structure {
     position: absolute;
